@@ -10,7 +10,8 @@ const Home = () => {
   // Function to fetch data from the API
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://testnodeapifornetlify.netlify.app/data');
+      // const response = await axios.get('http://localhost:8888/test/testdbcon');
+      const response = await axios.get('https://testnodeapifornetlify.netlify.app/test/testdbcon');
       console.log('API Response:', response.data);
       setData(response.data);
     } catch (error) {
